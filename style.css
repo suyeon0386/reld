@@ -1,0 +1,250 @@
+
+body{
+    font-family: "Noto Sans KR", sans-serif;
+    font-family: "WDXL Lubrifont SC", sans-serif;
+    font-size: 25px;
+    color: #041708;
+}
+
+.ffWDXLLubrifontSC{
+    font-family: "WDXL Lubrifont SC", sans-serif;
+}
+.container{ 
+    width: 1240px;
+    margin: 0 auto;
+    padding: 70px 10px 0;
+}
+
+  
+header{
+    background: url(손.jpg) no-repeat right center/cover;
+}
+
+header .container{
+    height: 720px;
+    position: relative;
+}
+
+header h1{
+    font-size: 44px;
+    padding-top: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family: 'Courier New', Courier, monospace'
+}
+
+header nav{
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    z-index: 100;
+}
+
+header nav ul{
+display: flex;
+justify-content: space-around;
+width: 1240px;
+margin: 0 auto;
+padding: 10px 20px;
+list-style: none;
+}
+
+header nav ul li a:link, :visited{
+    text-decoration: none;
+    color: rgb(50, 70, 53);
+}
+
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+
+main h2{
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: .05em;
+    margin-bottom: 80px;
+}
+
+.msgSec{
+    background-color: rgb(245, 240, 220);
+}
+
+.msgSec p{
+text-align: center;
+line-height: 1.75;
+margin-bottom: 70px;
+}
+.msgSec h3{
+text-align: center;
+font-size: 30px;
+font-weight: 300;
+}
+
+table{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: left;
+
+}
+.dateContainer{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.dateDetailSec{
+    font-size: 44px;
+    transform: translateX(100px);
+}
+.작품{
+    display: grid;
+    grid-template-columns: auto;
+}
+.dateSec{
+    background-color: rgb(255, 251, 245);
+    padding-bottom: 120px;
+}
+
+.dateDetailSec{
+    margin-left: -100px; /* ← 이미지와 살짝 겹치게 */
+    background-color: rgb(228, 223, 202);
+    padding: 40px 64px;
+    font-size: 42px;
+    color: rgb(55, 90, 73);
+    line-height: 1.2;
+    border-radius: 16px;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+}
+
+.dateContainer{
+    display: flex;
+  align-items: center;
+  position: relative;
+}
+iframe{
+    width: 100%;
+}
+
+.작품{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+  .작품 .item:hover {
+    border-color: #536a5c;
+    transition: border-color 0.3s ease;
+  }
+  .작품 .item {border: 5px dotted #c8e4cb;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: none
+  }
+  .작품 .item.active {
+    border: none;
+    box-shadow: 0px 10px 20px rgba(108, 139, 110, 0.5); 
+  }
+  .작품 .desc {
+    display: none;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #2c2c2c;
+  }
+  
+  .작품 .item.active .desc {
+    display: block;
+  }
+  
+  
+.gallSec{
+    padding-bottom: 120px;
+}
+
+.formSec {
+    background-color: rgb(206, 199, 180);
+padding-bottom: 120px;
+}
+
+form{
+    width: 600px;
+    margin: 0 auto;
+}
+
+input[type="text"],input[type="email"],textarea{
+    width:  100%;
+    background-color: aliceblue;
+    margin-top: 5px;
+    padding: 4px 5px;
+    border: 1px solid #705222;
+}
+
+input[typr="radio"], input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+textarea{
+    height: 148px;
+    margin-bottom: 30px;
+}
+
+form >p{
+    line-height: 1.4;
+margin-bottom: 20px;
+}
+input[type="submit"]{
+    background-color:blanchedalmond;
+    color: rgb(64, 60, 49);
+    
+    padding: 18px 80px;
+}
+input[type="submit"]:hover{
+    background-color: rgb(64, 60, 49);
+    color: blanchedalmond;
+    margin-left: 20px;
+}
+
+footer{
+    background-color: rgb(64, 60, 49);
+    color: blanchedalmond;
+    padding: 14px 10px 20px;
+}
+@media screen and(max-width:640px){
+
+
+    .container, header nav ul{
+        width: 100%;
+    }
+    body{
+        font-size: 16px;
+    }
+    main h2{
+        font: size 44px; 
+        margin-bottom: 60px;
+    }
+}
+form input[type="text"],
+form input[type="email"] {
+  border: 2px solid #ffffff;      
+  border-radius: 12px;         
+  padding: 10px 14px;          
+  font-size: 16px;              
+  font-family: inherit;          
+  outline: none;                
+  transition: all 0.3s ease;     
+}
+
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+  border-color: #fff6e3;
+  box-shadow: 0 0 5px rgba(145, 105, 45, 0.9);
+}
